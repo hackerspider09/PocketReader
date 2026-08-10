@@ -1,11 +1,22 @@
 execFileName="PocketReader.out"
 
-cd $(pwd)
+compileFilesList=("main" "Reader")
+
+compileFilesLine=""
+
+cd "$(pwd)/PocketReader"
+
+
+for i in "${compileFilesList[@]}"; do
+    compileFilesLine="$compileFilesLine src/$i.cpp"
+done
+
+echo "File in compiling: $compileFilesLine"
 
 echo "Create executable: "
-g++ -I PocketReader/include PocketReader/src/main.cpp -o "$execFileName"
+g++ -I include $compileFilesLine -o "build/$execFileName"
 
 
 echo "Run executable: "
 
-./"$execFileName"
+"./build/$execFileName"

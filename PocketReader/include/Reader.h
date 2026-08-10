@@ -3,7 +3,8 @@
 #define READER_H
 
 class Reader{
-
+    public:
+        Reader();
 };
 
 #endif
