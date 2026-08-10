@@ -5,10 +5,15 @@
 class Reader{
     private:
         int currentPage;
+        int totalPages;
     public:
         Reader();
 
-        void GetStatus();
+        void nextPage();
+        void previousPage();
+        void setTotalPages(int totalPages);
+        int getCurrentPage();
+
 };
 
 #endif
