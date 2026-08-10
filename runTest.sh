@@ -1,10 +1,11 @@
 execFileName="PocketReaderTest.out"
 
-compileFilesList=("Reader" "Book")
+compileFilesList=("Reader" "Book" "Library")
 
 compileFilesLine=""
 # testFileName="ReaderTest.cpp"
-testFileName="BookTest.cpp"
+# testFileName="BookTest.cpp"
+testFileName="LibraryTest.cpp"
 
 cd "$(pwd)/PocketReader"
 
