@@ -2,21 +2,23 @@
 #include "Reader.h"
 #include "Book.h"
 #include "Library.h"
+#include "Storage.h"
+
+#include<string>
+#include<vector>
+#include<filesystem>
 
 using namespace std;
+using namespace std::filesystem;
 
 int main(){
-    cout<<"PocketReader"<<endl;
+    cout<<"***PocketReader Firmware***"<<endl;
 
-    Book book1(
-        "books/linux.pdf",
-        "The Linux Programming Interface",
-        "Michael Kerrisk"
-    );
-
-    Library lib;
-    lib.addBook(book1);
-    cout<<lib.getBookCount()<<endl;
+    Storage obj;
+    vector<path> vp = obj.getFiles("books");
+    for(auto i:vp){
+        cout<<i<<endl;
+    }
 
     return 0;
 }
