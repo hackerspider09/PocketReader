@@ -7,7 +7,8 @@ int main(){
     cout<<"PocketReader"<<endl;
 
     Reader obj;
-    cout<< &obj<<endl;
+    
+    obj.GetStatus();
 
     return 0;
 }

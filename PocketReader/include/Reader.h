@@ -3,8 +3,12 @@
 #define READER_H
 
 class Reader{
+    private:
+        int currentPage;
     public:
         Reader();
+
+        void GetStatus();
 };
 
 #endif
