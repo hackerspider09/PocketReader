@@ -1,7 +1,5 @@
 // Implementation file for Library.h
 
-#include <iostream>
-#include <string>
 #include <vector>
 #include "Library.h"
 #include "Book.h"

@@ -1,6 +1,5 @@
 // Implementation file for BookReader.h
 
-#include <iostream>
 #include <string>
 #include<fstream>
 

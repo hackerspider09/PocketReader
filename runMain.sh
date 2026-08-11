@@ -1,6 +1,6 @@
 execFileName="PocketReader.out"
 
-compileFilesList=("main" "Reader" "Book" "Library" "Storage")
+compileFilesList=("main" "Reader" "Book" "Library" "Storage" "TextLayout")
 
 compileFilesLine=""
 

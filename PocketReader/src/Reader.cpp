@@ -1,13 +1,10 @@
 // Implementation file for Reader.h
 
-#include <iostream>
 #include "Reader.h"
 
 using namespace std;
 
-Reader::Reader():currentPage(1),totalPages(0){
-    cout<<"Reader Initialize"<<endl;
-}
+Reader::Reader():currentPage(1),totalPages(0){};
 
 void Reader::nextPage(){
     if ( currentPage<totalPages ){

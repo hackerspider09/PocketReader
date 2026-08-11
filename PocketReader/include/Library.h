@@ -1,7 +1,6 @@
 // Library.h
 #pragma once // Prevents duplicate inclusion errors
 
-#include <string>
 #include <vector>
 #include "Book.h"
 
