@@ -19,3 +19,10 @@ string Book::getPath(){
 string Book::getAuthor(){
     return author;
 }
+
+void Book::setTitle(string bookTitle){
+    title = bookTitle;
+}
+void Book::setAuthor(string authorName){
+    author = authorName;
+}

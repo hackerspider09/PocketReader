@@ -14,5 +14,7 @@ class Book{
         std::string getTitle();
         std::string getPath();
         std::string getAuthor();
+        void setTitle(std::string bookTitle);
+        void setAuthor(std::string authorName);
 
 };
