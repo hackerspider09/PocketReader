@@ -6,7 +6,8 @@ compileFilesLine=""
 # testFileName="ReaderTest.cpp"
 # testFileName="BookTest.cpp"
 # testFileName="LibraryTest.cpp"
-testFileName="StorageTest.cpp"
+# testFileName="StorageTest.cpp"
+testFileName="IntegrationTest.cpp"
 
 cd "$(pwd)/PocketReader"
 

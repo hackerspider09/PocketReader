@@ -8,8 +8,6 @@
 
 using namespace std;
 
-Library::Library(){};
-
 void Library::addBook(Book book){
     books.push_back(book);
 }
