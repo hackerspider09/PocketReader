@@ -7,5 +7,6 @@ g++ main.cpp -o PocketReader
 ./PocketReader 
 '''
 
-## Notes
+## Note
+- Create Build dir if not present
 - -I in g++ => header search dir
