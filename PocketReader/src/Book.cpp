@@ -13,7 +13,7 @@ Book::Book(string path,string title,string author):
 string Book::getTitle(){
     return title;
 }
-string Book::getPath(){
+string Book::getPath() const{
     return path;
 }
 string Book::getAuthor(){
