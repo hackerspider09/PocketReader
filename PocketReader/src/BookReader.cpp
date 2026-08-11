@@ -10,6 +10,12 @@
 using namespace std;
 
 bool BookReader::open(const Book& book){
+    content = "";
+
+    if (file.is_open()){
+        file.close();
+    }
+
     file.open(book.getPath());
 
     if ( !file.is_open() ){
@@ -21,12 +27,14 @@ bool BookReader::open(const Book& book){
 }
 
 string BookReader::read(){
+    if ( !content.empty() ) return content;
+
     string s ;
     string line ;
-    // file >> s;
+
     while(getline(file, line)){
         s += line;
         s += "\n";
     };
-    return s;
+    return content = s;
 }

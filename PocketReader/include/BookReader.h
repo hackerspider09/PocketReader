@@ -9,6 +9,7 @@
 class BookReader{
     private:
         std::ifstream file;
+        std::string content="";
     public:
         bool open(const Book& book);
         std::string read();

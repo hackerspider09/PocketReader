@@ -1,0 +1,2 @@
+Hello from Book 2
+This is the second book.
