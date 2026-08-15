@@ -3,6 +3,7 @@
 #include "Book.h"
 #include "Library.h"
 #include "Storage.h"
+#include "TextLayout.h"
 
 #include<string>
 #include<vector>
@@ -14,9 +15,10 @@ using namespace std::filesystem;
 int main(){
     cout<<"***PocketReader Firmware***"<<endl;
 
-    Storage obj;
-    vector<path> vp = obj.getFiles("books");
-    for(auto i:vp){
+    TextLayout obj(10,5);
+    vector<string> lines = obj.wrapText("The quick brown fox jumps");
+
+    for(auto i:lines){
         cout<<i<<endl;
     }
 

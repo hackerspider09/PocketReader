@@ -2,6 +2,8 @@
 #pragma once // Prevents duplicate inclusion errors
 
 #include<cstddef>
+#include<vector>
+#include<string>
 
 class TextLayout{
     private:
@@ -12,4 +14,5 @@ class TextLayout{
         TextLayout(size_t width,size_t height);
         size_t getWidth();
         size_t getHeight();
+        std::vector<std::string> wrapText(std::string content);
 };

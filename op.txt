@@ -1,0 +1,92 @@
+File in compiling:  src/Reader.cpp src/Book.cpp src/Library.cpp src/Storage.cpp src/BookReader.cpp src/TextLayout.cpp
+Create executable: 
+Run executable: 
+========================================
+TEST 1 - Simple paragraph | Expected lines: 3 | Max chars/line: 20
+========================================
+Number of lines: 3
+Line 1: [The quick brown fox] (19 chars)
+Line 2: [jumps over the lazy] (19 chars)
+Line 3: [dog] (3 chars)
+
+========================================
+TEST 2 - Exact width fit | Expected lines: 1 | Max chars/line: 10
+========================================
+Number of lines: 1
+Line 1: [12345 6789] (10 chars)
+
+========================================
+TEST 3 - Word doesn't fit | Expected lines: 2 | Max chars/line: 10
+========================================
+Number of lines: 2
+Line 1: [Hello] (5 chars)
+Line 2: [world] (5 chars)
+
+========================================
+TEST 4 - Multiple words | Expected lines: 4 | Max chars/line: 15
+========================================
+Number of lines: 4
+Line 1: [C++ is a] (8 chars)
+Line 2: [powerful] (8 chars)
+Line 3: [programming] (11 chars)
+Line 4: [language] (8 chars)
+
+========================================
+TEST 5 - Small width | Expected lines: TBD | Max chars/line: 5
+========================================
+ing  Sdfsdfsdfsdf
+Number of lines: 4
+Line 1: [I am] (4 chars)
+Line 2: [read-] (5 chars)
+Line 3: [ing a] (5 chars)
+Line 4: [book] (4 chars)
+
+========================================
+TEST 6 - Long word | Expected lines: TBD | Max chars/line: 5
+========================================
+Number of lines: 4
+Line 1: [Hello] (5 chars)
+Line 2: [Pock-] (5 chars)
+Line 3: [tRea-] (5 chars)
+Line 4: [er] (2 chars)
+
+========================================
+TEST 7 - Empty text | Expected lines: TBD | Max chars/line: 20
+========================================
+Number of lines: 0
+
+========================================
+TEST 8 - Single word | Expected lines: 1 | Max chars/line: 20
+========================================
+Number of lines: 1
+Line 1: [PocketReader] (12 chars)
+
+========================================
+TEST 9 - Longer paragraph | Expected lines: 4 | Max chars/line: 30
+========================================
+Number of lines: 4
+Line 1: [Linux is an operating system] (28 chars)
+Line 2: [kernel that manages hardware] (28 chars)
+Line 3: [resources and provides] (22 chars)
+Line 4: [services to applications.] (25 chars)
+
+========================================
+TEST 10 - Same text, different widths | Width 15: 4 lines, max 15 chars | Width 30: 2 lines, max 30 chars
+========================================
+--- Width 15 ---
+Expected lines: 4
+Max chars/line: 15
+
+Number of lines: 3
+Line 1: [The quick brown] (15 chars)
+Line 2: [fox jumps over] (14 chars)
+Line 3: [the lazy dog] (12 chars)
+
+--- Width 30 ---
+Expected lines: 2
+Max chars/line: 30
+
+Number of lines: 2
+Line 1: [The quick brown fox jumps over] (30 chars)
+Line 2: [the lazy dog] (12 chars)
+

@@ -18,7 +18,7 @@ bool BookReader::open(const Book& book){
     file.open(book.getPath());
 
     if ( !file.is_open() ){
-        cerr<<"Error: Unable to open file!"<< endl;
+        // cerr<<"Error: Unable to open file!"<< endl;
         return 0;
     }
 
